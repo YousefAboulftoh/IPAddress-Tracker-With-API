@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 0 10px;
 }
 
@@ -56,6 +56,12 @@
     padding: 10px;
     font-weight: bold;
 
+}
+
+.top .search .valid {
+    width: 100%;
+    color: red;
+    display: none;
 }
 
 .top .search input:focus {
@@ -75,11 +81,7 @@
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
-.top .search .vaild{
-    width:100%;
-    color:red;
-    display:none;
-}
+
 .top .result {
     position: absolute;
     background-color: white;
