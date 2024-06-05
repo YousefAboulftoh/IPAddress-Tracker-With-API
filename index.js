@@ -20,7 +20,7 @@ function ipAddressTraccker(ip) {
         .then((data) => {
             return data.code !== 422 ? showElement(data) : vaild.style.display = "block";
         }).catch(() => false)
-    if (mymap != undefined) {
+    if (mymap == undefined) {
         mymap.remove();
     }
     theIP.innerHTML = "";
